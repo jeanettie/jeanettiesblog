@@ -8,7 +8,8 @@ from .forms import PostForm, DeleteForm
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
-    
+
+#Shows information for an individual post    
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
@@ -40,10 +41,12 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
+#path to delete confirm page
 def post_delete(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_delete.html', {'post': post})
 
+#actually removes post from database 
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()

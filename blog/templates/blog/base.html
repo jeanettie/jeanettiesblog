@@ -2,14 +2,18 @@
 <html>
     <head>
         <title>Jeanette's Blog</title>
+<!-- import bootstrap -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!-- google font import -->
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<!-- local stylesheet -->
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
     <div class="page-header">
-        
+
+<!-- if user is logged in show add new post link -->
         {% if user.is_authenticated %}
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         {% endif %}
@@ -25,5 +29,5 @@
             </div>
         </div>
     </div>
-</body>
+    </body>
 </html>
