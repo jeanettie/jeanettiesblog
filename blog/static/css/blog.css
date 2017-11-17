@@ -1,4 +1,16 @@
+.btn {
+    
+        display: block;
+        margin: 0 auto 2vmax auto;  
+        font-size: 40px; 
+    
+    }
 
+.page-header h1 a {
+
+        font-size: 30pt;
+        text-decoration: none;
+    }
 
 
 
@@ -8,11 +20,7 @@
     padding: 20px 20px 20px 40px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    
-    font-size: 40pt;
-    text-decoration: none;
-}
+
 
 .content {
     margin-left: 40px;
@@ -53,28 +61,29 @@ h1, h2, h3, h4 {
 
 
 
-@media screen and ( max-width: 600px ) {
+@media screen and ( min-width: 600px ) {
+
+    
 
     .btn {
     
-        display: block;
-        margin: 0 auto 2vmax auto;  
-        font-size: 40px; 
+        display: inline-block;
+        margin-bottom: 0;  
+        font-size: 18px; 
     
     }
-
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     
-    .page-header h1 a {
+    font-size: 40pt;
+    text-decoration: none;
+}
 
-        font-size: 80pt;
-    }
-
-    body {
+body {
         font-size: 3vmax;
     }
 
-    h1 {
+h1 {
         font-size: 6vmax;
         margin: 2vmax 0;
-    }
+    }    
 }
