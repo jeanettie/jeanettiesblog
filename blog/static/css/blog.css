@@ -8,7 +8,7 @@
 
 .page-header h1 a {
 
-        font-size: 32pt;
+        font-size: 34pt;
         text-decoration: none;
     }
 
@@ -23,14 +23,14 @@ h1 {
 
 .page-header {
     background-color: #0000fff;
-    margin: 30px;
+    margin: 30px auto auto auto;
     padding: 20px 20px 20px 40px;
 }
 
 
 
 .content {
-    margin-left: 30px;
+    margin: 2.5vmax 2.25vmax auto 2.25vmax;
 }
 
 h1, h2, h3, h4 {
@@ -66,7 +66,7 @@ h1, h2, h3, h4 {
 }
 
 
-
+/**For screens over 600px**//
 
 @media screen and ( min-width: 600px ) {
 
@@ -96,7 +96,7 @@ h1 {
     }
 
 .content {
-    margin-left: 50px;
+    margin: auto auto auto 5vmax;
 }
     
 }
