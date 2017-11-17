@@ -7,4 +7,15 @@ to experience the add new post, delete, delete confirm, and edit pages. go to ht
 username: codelouisville, password: djangopython. Once in the admin you can click on "view site" at the top right. Then feel free to explore 
 the site.
 
-To pull from git hub. Fork and clone this repository.
+To pull from git hub. Fork and/or clone this repository. 
+
+1. From the jeanettiesblog folder enter the following into the command line in order to start the virutal enviroment:
+$ virtualenv --python=python3.6 myvenv
+$ source myvenv/bin/activate
+
+2. Next install Django using pip. 
+(myvenv) ~$ pip install --upgrade pip
+(myvenv) ~$ pip install django~=1.11.0
+
+3. To runserver, enter the following into the command line:
+(myvenv) ~$ python manage.py runserver
