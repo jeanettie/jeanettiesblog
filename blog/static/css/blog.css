@@ -8,7 +8,7 @@
 
 .page-header h1 a {
 
-        font-size: 30pt;
+        font-size: 32pt;
         text-decoration: none;
     }
 
@@ -23,14 +23,14 @@ h1 {
 
 .page-header {
     background-color: #0000fff;
-    margin-top: 0;
+    margin: 30px;
     padding: 20px 20px 20px 40px;
 }
 
 
 
 .content {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 h1, h2, h3, h4 {
@@ -72,7 +72,7 @@ h1, h2, h3, h4 {
 
     
 
-    .btn {
+.btn {
     
         display: inline-block;
         margin-bottom: 0;  
@@ -81,9 +81,10 @@ h1, h2, h3, h4 {
     }
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     
-    font-size: 36pt;
+    font-size: 38pt;
     text-decoration: none;
-}
+    
+    }
 
 body {
         font-size: 1.5vmax;
@@ -93,5 +94,10 @@ h1 {
         font-size: 3vmax;
         margin: 2vmax 0;
     }
+
+.content {
+    margin-left: 50px;
+}
     
 }
+ 
