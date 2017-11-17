@@ -4,8 +4,8 @@
     <h1>Delete post</h1>
     <p>Are you sure you want to delete "{{ post.title }}"?</p>
 <!-- yes icon removes post from list-->      
-    <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
+    <a id="button" class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
 <!-- no icon links back to post detail html-->
-    <a class="btn btn-default" href="{% url 'post_detail' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+    <a id="button" class="btn btn-default" href="{% url 'post_detail' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
     </form>
 {% endblock %}
