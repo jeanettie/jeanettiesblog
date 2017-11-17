@@ -66,9 +66,9 @@ h1, h2, h3, h4 {
 }
 
 
-/**For screens over 600px**/
+/**For screens over 768px**/
 
-@media screen and ( min-width: 600px ) {
+@media screen and ( min-width: 768px ) {
 
     
 
