@@ -1,4 +1,9 @@
-
+.btn {
+    
+        display: block;
+        margin: 0 auto 2vmax auto;  
+        font-size: 40px; 
+    }
 
 
 
@@ -54,13 +59,27 @@ h1, h2, h3, h4 {
 
 
 
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 
     .btn {
-    
-        display: block;
-        margin: 0 auto 1vmax auto;   
-    }
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
 
     .page-header h1 a {
 
